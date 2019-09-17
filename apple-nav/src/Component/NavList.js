@@ -5,7 +5,7 @@ const NavItem = (props) => {
 	return (
 		<div className="nav-item">
 			{props.links.map((item) => (
-				<Link to={`/sub-links/${item.name}`}>
+				<Link to={`${item.name}`}>
 					<h2>{item.name}</h2>
 				</Link>
 			))}
