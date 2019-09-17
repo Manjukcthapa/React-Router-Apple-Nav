@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import NavList from "../Component/NavList"
 import data from "../data";
+import { Route } from 'react-router-dom';
 
 const NavWrapper = () => {
-    const [appleproduct] = useState(data);
+    const [appleData] = useState(data);
 
 
     return(
         <div>
-            <h1>Hello</h1>
+           <Route path="/" render={() => <NavList links={appleData} />} />
         </div>
     )
 }
