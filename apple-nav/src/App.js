@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import NavWrapper from "./Component/NavWrapper"
 
-class App extends Component {
-  render() {
+const App = () => {
+ 
+
+  
     return (
      <NavWrapper/>
     );
   }
-}
+
 
 export default App;

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from "react";
 
 const NavWrapper = () => {
+    const [appleproduct] = useState(data);
+
 
     return(
         <div>
