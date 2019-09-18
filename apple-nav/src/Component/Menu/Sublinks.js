@@ -1,11 +1,15 @@
 import React from "react";
-import SubLinks from './SubItem'
+import SubItem from './SubItem'
 
-const SubItem = () => {
+const SubLinks = (props) => {
+	const menu = props.data.find((item) => item.name === props.match.params.name);
+	console.log(menu);
 
-	return(
-		<div>
-        <SubItem/>
+	return (
+		<div className={`sub-links ${menu.name}`}>
+			<SubItem subLinks={menu.subLinks} />
 		</div>
-	)
+	);
 }
+
+export default SubLinks;
